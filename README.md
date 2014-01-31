@@ -2,7 +2,9 @@
 # Clojure Dependencies Plugin
 
 This is a Leiningen plugin to allow checking the status of your dependencies
-from the shell.
+from the shell.  It uses the API exposed by the
+[clj-deps](https://github.com/rodnaph/clj-deps) application running at
+http://clj-deps.herokuapp.com.
 
 ## Usage
 
