@@ -1,5 +1,5 @@
 
-# Clojure Dependency Checker via Leiningen
+# Clojure Dependencies Plugin
 
 This is a Leiningen plugin to allow checking the status of your dependencies
 from the shell.
