@@ -7,7 +7,18 @@ from the shell.
 ## Usage
 
 ```
-lein clj-deps
+%> lein clj-deps
+
+ Dependency Status
+ -----------------
+
+ ✘  org.clojure/clojure ... 1.6.0-alpha3
+ ✘  compojure/compojure ... 1.2.0-SNAPSHOT
+ ✓  salesforce/salesforce
+ ✘  cheshire/cheshire ... 5.3.1
+ ✘  ring-mock/ring-mock ... 0.1.5
+ ✘  ring/ring-devel ... 1.2.1
+
 ```
 
 ## Installation
