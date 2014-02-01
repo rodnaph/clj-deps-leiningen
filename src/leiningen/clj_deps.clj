@@ -20,13 +20,14 @@
     (println " -----------------")
     (println "")
     (doseq [[title current versions] deps]
-      (let [latest (latest-version versions)
-            upgrade? (later-version? current latest)]
-        (println (format " %s  %s%s"
-                         (if upgrade? icon-bad icon-ok)
+      (let [stable (latest-stable versions)
+            latest (latest-version versions)
+            stable? (later-version? current stable)
+            unstable? (later-version? current latest)]
+        (println (format " %s  %s%s%s"
+                         (if stable? icon-ok icon-bad)
                          title
-                         (if upgrade? (str " ... " latest) "")))))
-    (println "")
-    (println " Via: " url)
+                         (if stable? "" (str " ... " stable))
+                         (if unstable? (str " (latest: " latest ")") "")))))
     (println "")))
 
