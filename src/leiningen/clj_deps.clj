@@ -25,9 +25,12 @@
             stable? (later-version? current stable)
             unstable? (later-version? current latest)]
         (println (format " %s  %s%s%s"
-                         (if stable? icon-ok icon-bad)
+                         (if stable?
+                           icon-ok icon-bad)
                          title
-                         (if stable? "" (str " ... " stable))
-                         (if unstable? (str " (latest: " latest ")") "")))))
+                         (if stable?
+                           (str " ... " stable) "")
+                         (if unstable?
+                           (str " (latest: " latest ")") "")))))
     (println "")))
 
