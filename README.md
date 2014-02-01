@@ -28,7 +28,7 @@ http://clj-deps.herokuapp.com.
 Add this to your _~/.lein/profiles.clj_ file, for example...
 
 ```clojure
-{:user {:plugins [[rodnaph/clj-deps-leiningen "0.1.0"]]}}
+{:user {:plugins [[rodnaph/clj-deps-leiningen "0.2.0"]]}}
 ```
 
 Latest version can be found on
